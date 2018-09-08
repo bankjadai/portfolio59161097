@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form class="flex-buttons">
+        <input id="firtnum" placeholder="put firtnum">
+        <input id="secnum" placeholder="put secnum">
+    </form>
+    <button id="sumbt" onclick="getSum()">+</button>
+<div id="output"></div>
+    <script>
+        var firtnum=document.getElementById("firtnum");
+        var secnum=document.getElementById("secnum");
+var output=document.getElementById("output");
+function show(result){
+
+  //  var addPARA=document.createElement("p");
+  //  addPARA.innerHTML="ans" + result;
+    output.innerHTML="and"+result;
+}
+
+function getSum(){
+    let sum=parseInt(firtnum.Value) +parseInt(secnum.Value);
+    show(sum);
+}
+        
+    </script>
+</body>
+</html>
